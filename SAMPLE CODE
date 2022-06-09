@@ -1,0 +1,30 @@
+import random
+                              #a function to shuffle all the characters of the string
+                              
+def shuffle(string):
+    tempList=list(string)
+    random.shuffle(tempList)
+    return ''.join(tempList)
+    
+                             #65,90-ASCII VALUE OF EVERY ALPHABET
+uppercaseletter1=chr(random.randint(65,90))
+uppercaseletter2=chr(random.randint(65,90))
+uppercaseletter3=chr(random.randint(65,90))
+uppercaseletter4=chr(random.randint(65,90))
+uppercaseletter5=chr(random.randint(65,90))
+uppercaseletter6=chr(random.randint(65,90))
+uppercaseletter7=chr(random.randint(65,90))
+uppercaseletter8=chr(random.randint(65,90))
+
+                             #GENERATING PASSWORDS USING ALL THE CHARACTERS IN A RANDOM WAY
+password = uppercaseletter1 + uppercaseletter2 + uppercaseletter3 + uppercaseletter4 + uppercaseletter5 + uppercaseletter6 + uppercaseletter7 + uppercaseletter8 #
+password = shuffle(password)
+
+                             #output
+print(password)
+
+
+
+
+
+OUTPUT- HXTGOTUH
